@@ -1,0 +1,9 @@
+- name: print task varible
+  hosts: localhost
+  task:
+    - name: printing varible from task
+      ansible.builtin.debug:
+       name: "karthik"
+       address: "102 naturelisslayout"
+       street: "4thcross"
+       msg: "hai iam {{name}} my address is {{address}} my street is {{street}}"
