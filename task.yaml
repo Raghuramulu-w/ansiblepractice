@@ -3,6 +3,7 @@
   task:
    - name: printing varible from task
       #ansible.builtin.debug:
+     vars:
        name: "karthik"
        address: "102 naturelisslayout"
        street: "4thcross"
