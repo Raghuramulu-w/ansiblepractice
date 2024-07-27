@@ -2,10 +2,10 @@
   hosts: localhost
   vars_prompt:
      name: "person"
-     prompt: "enter value"
+     prompt: enter value
      private: false
      name: "message"
-     prompt: "enter message"
+     prompt: enter message
      private: false
   tasks:
    - name: printing through prompt
