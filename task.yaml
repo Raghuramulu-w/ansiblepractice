@@ -7,5 +7,5 @@
        address: "102 naturelisslayout"
        street: "4thcross"
      ansible.builtin.debug:
-       msg: "hai iam {{name}} my address is {{address}} my street is {{street}}"
+       msg: "hai iam {{name}},my address is {{address}} , my street is {{street}}"
       
