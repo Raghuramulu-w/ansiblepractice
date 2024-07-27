@@ -2,7 +2,7 @@
   hosts: localhost
   vars_prompt:
    - name: person
-     prompt: enter value
+     prompt: enter name
      private: false
    - name: message
      prompt: enter message
