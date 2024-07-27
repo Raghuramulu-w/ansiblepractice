@@ -1,0 +1,8 @@
+- name: printing file varible
+  hosts: localhost
+  vars_files:
+   - varible.yaml
+  tasks:
+    - name: printing file varibles
+      ansible.builtin.debug:
+        msg: "hai iam {{person}} mydob is {{dob}} my fashion is {{fashion}}"
