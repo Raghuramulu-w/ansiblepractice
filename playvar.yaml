@@ -6,5 +6,5 @@
     duration: "10hrs"
   tasks:
     - name: play var printing
-      ansible.builtin.debug
+      ansible.builtin.debug:
        msg: "hai{{person}} iam learning {{course}} duration is {{duration}}"
