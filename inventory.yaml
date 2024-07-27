@@ -1,0 +1,6 @@
+- name: printing values through inventory
+  hosts: localhost
+  tasks: 
+   - name: printing values
+     ansible.builtin.debug:
+      msg: "hai my name is "
