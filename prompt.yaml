@@ -10,4 +10,4 @@
   tasks:
    - name: printing through prompt
      ansible.builtin.debug:
-      msg: "hai iam {{person}} {{message}} 
+      msg: "hai iam {{person}} {{message}}"
