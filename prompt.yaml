@@ -1,0 +1,13 @@
+- name: printing through prompt
+  hosts: localhost
+  vars_prompt:
+   - name: "person"
+     prompt: enter value
+     private: false
+   - name: "message"
+     prompt: "enter message"
+     private: false
+  tasks:
+   - name: printing through prompt
+     ansible.builtin.debug:
+      msg: "hai iam {{person}} {{message}} 
