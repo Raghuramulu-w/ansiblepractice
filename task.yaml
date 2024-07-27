@@ -1,6 +1,6 @@
 - name: print task varible
   hosts: localhost
-  task:
+  tasks:
    - name: printing varible from task
       #ansible.builtin.debug:
      vars:
