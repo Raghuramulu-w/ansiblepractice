@@ -4,9 +4,10 @@
    - name: checking user
      ansible.builtin.command: id roboshop
      register: user
+     ignore_errors: true
    - name: printing out put
      ansible.builtin.debug:
-     ignore_errors: true
+    # ignore-errors: true
       msg: "output is {{user}}"
    - name: printing ouput status
      ansible.builtin.debug:
