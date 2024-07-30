@@ -6,11 +6,11 @@
       ansible.builtin.package:
        name: "{{item}}"
        state: present
-    - name: checking sms"
-      ansible.builtin.debug:
-       msg: "package is installed {{item}}"
       loop:
        - nginx
        - git
        - nodejs
+    - name: checking sms"
+      ansible.builtin.debug:
+       msg: "package is installed {{item}}"
 
