@@ -9,3 +9,5 @@
       loop:
        - nginx
        - git
+       - html
+       
