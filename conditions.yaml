@@ -7,10 +7,13 @@
      ignore_errors: true
    - name: printing out put
      ansible.builtin.debug:
-    # ignore-errors: true
       msg: "output is {{user}}"
    - name: printing ouput status
      ansible.builtin.debug:
       msg: "status of command is {{user.rc}}"
+   - name: creating user
+     ansible.builtin.user:
+      name: roboshop
+     when: user.rc !=0
 
   
