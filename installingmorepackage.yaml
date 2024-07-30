@@ -5,12 +5,11 @@
     - name: installing packages
       ansible.builtin.package:
        name: "{{item}}"
-       state: present
+       state: "{{item.state}}"
       loop:
-       - nginx
-       - git
-       - nodejs
-    - name: checking sms
-      ansible.builtin.debug:
-       msg: "package is installed {{item}}"
+       - {name: 'git' , state: 'absent'}}
+       - {name: 'nginx' , state: 'absent'}}
+       - {name: 'nodejs' , state: 'present'}}
+       - {name: 'nginx' , state: 'absent'}}
 
+       
