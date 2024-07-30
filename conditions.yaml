@@ -7,4 +7,8 @@
    - name: printing out put
      ansible.builtin.debug:
       msg: "output is {{user}}"
+   - name: printing ouput status
+     ansible.builtin.debug:
+      msg: "status of command is {{user.rc}}"
+      
   
