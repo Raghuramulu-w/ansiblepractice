@@ -2,7 +2,7 @@
   hosts: localhost
   tasks: 
    - name: checking user
-     ansible.builtin.command:
+     ansible.builtin.command: id roboshop
      register: user
    - name: printing out put
      ansible.builtin.debug:
