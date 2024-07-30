@@ -1,0 +1,10 @@
+- name: checking user exits
+  hosts: localhost
+  tasks: 
+   - name: checking user
+     ansible.builtin.command:
+     register: user
+   - name: printing out put
+     ansible.builtin.debug:
+      msg: "output is {{user}}"
+  
